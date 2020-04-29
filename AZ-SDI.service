@@ -1,0 +1,12 @@
+[Unit]
+Description=Data Provisioning Agent Control by uwe.kaden@allianz.com
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/sdi.sh start
+ExecStop=/usr/local/bin/sdi.sh stop
+
+
+[Install]
+WantedBy=multi-user.target
